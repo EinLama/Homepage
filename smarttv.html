@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>About: Tobias Eilert</title>
+
+    <link rel="stylesheet" href="assets/bulma@0.9.4.min.css">
+    <link rel="stylesheet" href="assets/stylesheet.css">
+</head>
+
+<body>
+    <img class="ink1" src="assets/ink1.png">
+    <img class="ink2" src="assets/ink2.png">
+
+
+
+    <article class="main-content content is-medium container">
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="index.html">
+                    <img src="assets/enso.jpeg">
+                </a>
+
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                    data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+
+            <div class="navbar-menu">
+                <div class="navbar-start">
+                    <a href="index.html" class="navbar-item">
+                        Home
+                    </a>
+
+                    <a href="about.html" class="navbar-item">
+                        About
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <hr>
+
+        <h1 class="title">SmartTV</h1>
+        <p class="subtitle">
+            Music video streaming application for TVs and the web
+        </p>
+
+        <p>This was the pinnacle of my multimedia work. An application in which you could watch music videos,
+            personalized for you. Additionally, you could watch selected content such as new releases and music news.
+        </p>
+
+        <p>It had revolutionary features for its time and platform: You could log in on our website or the mobile app
+            and control your TV application from there (just like Spotify does today). While you personalized your
+            experience or searched for your favorite music videos, you were never disrupted from watching music videos.
+            All menus and controls were rendered on top of the running stream. Back when Netflix still had their old
+            static design, we already had this:</p>
+
+        <figure class="image is-2by1">
+            <img src="assets/app1.png">
+        </figure>
+
+        <p>The application was running on Samsung, LG, Philips (and many more) TVs, bundled as application
+            package and marketed through their own app store. Sometimes it came preinstalled in the DACH
+            region. Additionally, the app could be accessed via HbbTV which made it available for TVs not
+            having any app ecosystem. Furthermore, it supported mouse input (some remote controls can behave
+            like a pointer device), voice control-enabled search, and more. We even bundled the application
+            for the Playstation 4, AndroidTV, Roku, Amazon FireTV and much more.</p>
+
+        <figure class="image is-2by1">
+            <img src="assets/app2.png">
+        </figure>
+
+        <p>All of these platforms had different needs for video codecs, input methods, data persistence (for
+            storing user settings) and many more. The base technology to support most of these platforms is:
+            a bit of HTML and a lot of JavaScript. In order to support all of their different requirements
+            (sometimes XHTML, sometimes HTML5), I've built a Ruby on Rails webapp that would generate an
+            asset bundle per platform, of course with i18n support and feature flags. During active
+            development, you could run the Rails app in your browser and debug it like you would debug a
+            regular SPA. Once the core development of a feature was done, I still had to verify the details
+            on real hardware. Each brand and model behaved differently. Emulators were the exception.</p>
+
+        <figure class="image is-2by1">
+            <img src="assets/app3.png">
+        </figure>
+
+        <p>All in all, the core application with all its logic had around 500k lines of vanilla JavaScript.
+            In a domain were debugging is very time-intensive, I've learned to write clean code in order to
+            make the app run as stable as possible. Still, it included graceful atuomatic restarts in case
+            of issues, troubleshooting advice for the end user, and more. I hope that the thousands of
+            active users at the time enjoyed using the app as much as I did refining it.</p>
+
+        <p>Unfortunately, the app was terminated as its company was shut down in 2017.</p>
+    </article>
+
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>
+                <strong>Pentokami</strong> is the website of Tobias Eilert. Contact me on <a
+                    href="https://www.linkedin.com/in/tobias-eilert-9560681ab/">LinkedIn</a> if you want to chat.
+            </p>
+            <p>No cookies, no tracking, no unnecessary scripts. Styled with <a href="https://bulma.io/">Bulma</a>.
+                Pictures taken from <a href="https://pixabay.com/">Pixabay.com</a>.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

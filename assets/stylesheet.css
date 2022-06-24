@@ -1,0 +1,24 @@
+.navbar-item img {
+    max-height: 3rem;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 2em;
+}
+
+.main-content {
+    margin-top: 2rem;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.ink1 {
+    position: absolute;
+    right: -200px;
+}
+
+.ink2 {
+    position: absolute;
+    left: -60px;
+    top: 600px;
+}
